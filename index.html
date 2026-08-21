@@ -6,35 +6,19 @@
 
 <title>Handwriting Work From Home</title>
 
-<meta name="description"
-content="Explore flexible handwriting and writing work opportunities from home.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 <style>
-
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:
-        radial-gradient(circle at top left,#18d66d 0%,transparent 35%),
-        radial-gradient(circle at bottom right,#006d35 0%,transparent 35%),
-        linear-gradient(145deg,#00a94f,#008d43);
-    color:#263238;
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#00c853,#008f46);
     min-height:100vh;
-    padding:18px 14px 95px;
+    color:#333;
+    padding:18px 12px 95px;
 }
 
 .container{
@@ -43,55 +27,47 @@ body{
     margin:auto;
 }
 
-/* TOP TELEGRAM BUTTON */
+/* TELEGRAM TOP BUTTON */
 
-.top-cta{
+.telegram-btn{
     display:block;
     width:100%;
-    text-decoration:none;
-    background:linear-gradient(135deg,#1688f7,#0878e5);
-    color:#fff;
     text-align:center;
-    padding:20px 15px;
-    border-radius:50px;
-    font-size:21px;
+    text-decoration:none;
+    background:#1688f5;
+    color:white;
+    font-size:20px;
     font-weight:800;
-    box-shadow:0 10px 25px rgba(0,0,0,.18);
+    padding:19px 10px;
+    border-radius:50px;
     margin-bottom:22px;
-    transition:.25s;
-}
-
-.top-cta:hover{
-    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,.20);
 }
 
 /* MAIN CARD */
 
-.main-card{
-    background:rgba(255,255,255,.98);
-    border-radius:36px;
-    padding:32px 22px 28px;
-    box-shadow:0 18px 45px rgba(0,0,0,.16);
-    border:1px solid rgba(255,255,255,.7);
+.card{
+    background:white;
+    border-radius:34px;
+    padding:30px 18px 25px;
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
 }
-
-/* HEADING */
 
 h1{
     text-align:center;
-    font-size:38px;
-    line-height:1.12;
+    color:#3b4252;
+    font-size:36px;
+    line-height:1.15;
     font-weight:800;
-    color:#343b4b;
-    margin-bottom:14px;
 }
 
 .subtitle{
     text-align:center;
-    font-size:22px;
-    font-weight:700;
-    color:#0879ce;
-    margin-bottom:28px;
+    color:#087bd1;
+    font-size:23px;
+    font-weight:800;
+    margin-top:18px;
+    margin-bottom:30px;
 }
 
 /* FEATURES */
@@ -99,7 +75,7 @@ h1{
 .features{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:17px 14px;
+    gap:18px 12px;
     margin-bottom:30px;
 }
 
@@ -108,265 +84,207 @@ h1{
     align-items:center;
     gap:10px;
     font-size:16px;
-    font-weight:600;
-    line-height:1.25;
+    font-weight:700;
+    color:#444;
 }
 
 .check{
-    min-width:43px;
-    height:43px;
-    border-radius:9px;
-    background:#dff5e4;
-    color:#159447;
+    width:42px;
+    height:42px;
+    min-width:42px;
     display:flex;
     align-items:center;
     justify-content:center;
+    background:#dff5e4;
+    color:#159447;
+    border-radius:9px;
     font-size:25px;
-    font-weight:800;
+    font-weight:bold;
 }
 
 /* INNER CTA */
 
 .cta-box{
-    border:9px solid #10a28f;
+    border:8px solid #10a38e;
     border-radius:28px;
-    padding:22px 14px 16px;
-    background:#fff;
+    padding:22px 12px 16px;
 }
 
-.join-button{
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.cta-button{
+    display:block;
+    text-align:center;
     text-decoration:none;
-    background:linear-gradient(135deg,#148bf1,#0877dd);
+    background:#1488ed;
     color:white;
-    padding:20px 12px;
+    padding:20px 8px;
     border-radius:50px;
     font-size:18px;
     font-weight:800;
-    box-shadow:0 8px 18px rgba(0,119,220,.25);
-    transition:.25s;
-}
-
-.join-button:hover{
-    transform:scale(1.02);
+    box-shadow:0 7px 18px rgba(0,100,200,.25);
 }
 
 .note{
     text-align:center;
     color:#777;
     font-size:13px;
-    line-height:1.6;
+    line-height:1.55;
     margin-top:14px;
 }
 
-/* SECOND CTA */
-
-.middle-cta{
-    display:block;
-    text-decoration:none;
-    text-align:center;
-    background:linear-gradient(135deg,#1688f7,#0879e6);
-    color:#fff;
-    padding:19px 10px;
-    border-radius:50px;
-    font-size:19px;
-    font-weight:800;
-    margin:26px 0 16px;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-/* SUBSCRIBE */
+/* OTHER BUTTONS */
 
 .subscribe{
     display:block;
-    text-decoration:none;
     text-align:center;
-    background:linear-gradient(135deg,#ffbd19,#ff8615);
-    color:#fff;
-    padding:19px 10px;
-    border-radius:50px;
+    text-decoration:none;
+    color:white;
     font-size:19px;
     font-weight:800;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-    margin-bottom:26px;
+    padding:19px 10px;
+    border-radius:50px;
+    margin-top:18px;
+    background:linear-gradient(135deg,#ffbd18,#ff8615);
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
 }
 
 /* HOW IT WORKS */
 
 .section{
-    background:#fff;
+    background:white;
+    margin-top:22px;
     border-radius:30px;
-    padding:28px 20px;
-    margin-top:20px;
-    box-shadow:0 14px 35px rgba(0,0,0,.12);
+    padding:28px 18px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
 }
 
-.section-title{
+.title{
     text-align:center;
+    color:#087bd1;
     font-size:27px;
     font-weight:800;
-    color:#0879ce;
-    margin-bottom:22px;
+    margin-bottom:25px;
 }
 
 .step{
     display:flex;
-    align-items:flex-start;
     gap:14px;
-    margin-bottom:20px;
+    margin-bottom:22px;
 }
 
 .step:last-child{
     margin-bottom:0;
 }
 
-.step-number{
-    min-width:44px;
+.number{
+    width:44px;
     height:44px;
+    min-width:44px;
     border-radius:50%;
-    background:linear-gradient(135deg,#0a9df5,#0874dc);
-    color:#fff;
+    background:#1488ed;
+    color:white;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-weight:800;
+    font-weight:bold;
     font-size:17px;
 }
 
 .step h3{
+    color:#333;
     font-size:17px;
-    margin-bottom:3px;
-    color:#343b4b;
+    margin-bottom:4px;
 }
 
 .step p{
-    font-size:13px;
     color:#777;
-    line-height:1.55;
+    font-size:13px;
+    line-height:1.5;
 }
 
-/* INFO CARDS */
+/* INFO */
 
-.info-grid{
+.info{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:12px;
-    margin-top:20px;
+    margin-top:22px;
 }
 
-.info{
-    background:#f4f9ff;
-    border-radius:18px;
-    padding:18px 10px;
+.info-box{
+    background:white;
+    border-radius:20px;
+    padding:20px 8px;
     text-align:center;
-    border:1px solid #e4edf7;
+    box-shadow:0 8px 22px rgba(0,0,0,.12);
 }
 
-.info-icon{
-    font-size:27px;
-    margin-bottom:7px;
+.info-box .icon{
+    font-size:28px;
+    margin-bottom:8px;
 }
 
-.info strong{
+.info-box strong{
     display:block;
     font-size:14px;
-    color:#333;
 }
 
-.info small{
+.info-box small{
     color:#777;
     font-size:11px;
 }
 
-/* BOTTOM CTA */
+/* BOTTOM */
 
-.bottom-cta{
-    margin-top:25px;
-    background:#fff;
+.bottom{
+    background:white;
     border-radius:28px;
-    padding:25px 18px;
+    padding:25px 16px;
+    margin-top:22px;
     text-align:center;
-    box-shadow:0 14px 35px rgba(0,0,0,.15);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
 }
 
-.bottom-cta h2{
-    color:#343b4b;
+.bottom h2{
     font-size:23px;
+    color:#333;
     margin-bottom:8px;
 }
 
-.bottom-cta p{
+.bottom p{
     color:#777;
     font-size:13px;
     margin-bottom:17px;
 }
 
-.bottom-button{
-    display:block;
-    text-decoration:none;
-    background:linear-gradient(135deg,#1688f7,#0877dd);
-    color:#fff;
-    padding:18px 10px;
-    border-radius:50px;
-    font-size:18px;
-    font-weight:800;
-}
-
-/* FOOTER */
-
 footer{
+    color:white;
     text-align:center;
-    color:rgba(255,255,255,.85);
     font-size:11px;
-    margin-top:25px;
     line-height:1.6;
+    margin-top:24px;
 }
 
-/* STICKY TELEGRAM BUTTON */
+/* STICKY BUTTON */
 
-.sticky-telegram{
+.sticky{
     position:fixed;
-    left:12px;
-    right:12px;
-    bottom:12px;
-    z-index:999;
-    max-width:656px;
-    margin:auto;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    z-index:9999;
 }
 
-.sticky-telegram a{
+.sticky a{
     display:block;
     text-align:center;
     text-decoration:none;
-    background:linear-gradient(135deg,#168cf5,#0875dd);
-    color:#fff;
-    padding:17px 10px;
+    color:white;
+    background:#1488ed;
+    padding:17px 8px;
     border-radius:50px;
     font-size:17px;
     font-weight:800;
-    box-shadow:0 8px 30px rgba(0,0,0,.30);
-    border:2px solid rgba(255,255,255,.35);
-}
-
-/* ANIMATION */
-
-@keyframes pulse{
-    0%{
-        box-shadow:0 0 0 0 rgba(20,139,241,.45);
-    }
-    70%{
-        box-shadow:0 0 0 12px rgba(20,139,241,0);
-    }
-    100%{
-        box-shadow:0 0 0 0 rgba(20,139,241,0);
-    }
-}
-
-.join-button,
-.bottom-button{
-    animation:pulse 2.3s infinite;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
 }
 
 /* MOBILE */
@@ -375,16 +293,6 @@ footer{
 
     body{
         padding:14px 10px 90px;
-    }
-
-    .top-cta{
-        font-size:18px;
-        padding:18px 8px;
-    }
-
-    .main-card{
-        border-radius:30px;
-        padding:27px 15px 22px;
     }
 
     h1{
@@ -396,7 +304,7 @@ footer{
     }
 
     .features{
-        gap:14px 8px;
+        gap:15px 8px;
     }
 
     .feature{
@@ -404,39 +312,99 @@ footer{
     }
 
     .check{
-        min-width:39px;
+        width:39px;
         height:39px;
+        min-width:39px;
         font-size:22px;
     }
 
-    .cta-box{
-        border-width:7px;
-        padding:18px 10px 14px;
+    .telegram-btn{
+        font-size:18px;
     }
 
-    .join-button{
+    .cta-button{
         font-size:16px;
-        padding:18px 7px;
     }
-
-    .middle-cta,
-    .subscribe{
-        font-size:17px;
-    }
-
-    .section{
-        padding:24px 16px;
-    }
-
-    .section-title{
-        font-size:24px;
-    }
-
 }
-
-/* SMALL PHONE */
 
 @media(max-width:360px){
 
+    .features{
+        grid-template-columns:1fr;
+    }
+
     h1{
-        font-size:28px
+        font-size:29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TOP TELEGRAM BUTTON -->
+
+    <a
+        href="https://t.me/+UFdMjt0eGrhmM2M1"
+        class="telegram-btn"
+        target="_blank">
+        🚀 JOIN TELEGRAM CHANNEL
+    </a>
+
+
+    <!-- MAIN CARD -->
+
+    <div class="card">
+
+        <h1>
+            Handwriting Work From<br>
+            Home
+        </h1>
+
+        <div class="subtitle">
+            Flexible Writing Work
+        </div>
+
+
+        <!-- FEATURES -->
+
+        <div class="features">
+
+            <div class="feature">
+                <span class="check">✓</span>
+                <span>Work From Home</span>
+            </div>
+
+            <div class="feature">
+                <span class="check">✓</span>
+                <span>No Experience Needed</span>
+            </div>
+
+            <div class="feature">
+                <span class="check">✓</span>
+                <span>Flexible Timing</span>
+            </div>
+
+            <div class="feature">
+                <span class="check">✓</span>
+                <span>Project Based Work</span>
+            </div>
+
+        </div>
+
+
+        <!-- INNER TELEGRAM -->
+
+        <div class="cta-box">
+
+            <a
+                href="https://t.me/+UFdMjt0eGrhmM2M1"
+                class="cta-button"
+                target="_blank">
+                🚀 JOIN TELEGRAM CHANNEL 🚀
+            </a>
+
+            <p class="note">
+               
