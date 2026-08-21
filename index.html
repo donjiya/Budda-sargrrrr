@@ -6,19 +6,30 @@
 
 <title>Handwriting Work From Home</title>
 
+<meta name="description"
+content="Handwriting and writing work from home information and project updates.">
+
 <style>
+
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:linear-gradient(135deg,#00c853,#008f46);
+    background:
+        radial-gradient(circle at top left,#20e878 0%,transparent 32%),
+        radial-gradient(circle at bottom right,#006b39 0%,transparent 35%),
+        linear-gradient(135deg,#00b957,#008a43);
     min-height:100vh;
-    color:#333;
-    padding:18px 12px 95px;
+    color:#263238;
+    padding:15px 11px 100px;
 }
 
 .container{
@@ -27,147 +38,368 @@ body{
     margin:auto;
 }
 
-/* TELEGRAM TOP BUTTON */
+/* =========================
+   TOP TELEGRAM
+========================= */
 
-.telegram-btn{
-    display:block;
+.top-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
     width:100%;
-    text-align:center;
-    text-decoration:none;
-    background:#1688f5;
-    color:white;
-    font-size:20px;
-    font-weight:800;
-    padding:19px 10px;
+    padding:18px 10px;
+
     border-radius:50px;
-    margin-bottom:22px;
-    box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+    background:linear-gradient(
+        135deg,
+        #1594ff,
+        #0875dc
+    );
+
+    color:#fff;
+    text-decoration:none;
+
+    font-size:19px;
+    font-weight:800;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+
+    margin-bottom:18px;
 }
 
-/* MAIN CARD */
+/* =========================
+   HERO CARD
+========================= */
 
-.card{
-    background:white;
+.hero{
+    background:#fff;
     border-radius:34px;
-    padding:30px 18px 25px;
-    box-shadow:0 12px 35px rgba(0,0,0,.18);
+    overflow:hidden;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.20);
+}
+
+/* WORK PHOTO */
+
+.work-photo{
+    width:100%;
+    height:250px;
+    position:relative;
+    overflow:hidden;
+}
+
+.work-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.photo-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,.05),
+            rgba(0,0,0,.45)
+        );
+}
+
+.photo-label{
+    position:absolute;
+    left:16px;
+    bottom:16px;
+
+    background:rgba(0,0,0,.68);
+    color:white;
+
+    padding:9px 14px;
+    border-radius:30px;
+
+    font-size:13px;
+    font-weight:700;
+
+    backdrop-filter:blur(5px);
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    padding:28px 20px 25px;
 }
 
 h1{
     text-align:center;
-    color:#3b4252;
+
     font-size:36px;
-    line-height:1.15;
-    font-weight:800;
+    line-height:1.12;
+
+    color:#343b4b;
+
+    font-weight:900;
+}
+
+.highlight{
+    color:#087bd1;
 }
 
 .subtitle{
     text-align:center;
+
+    font-size:20px;
+    font-weight:700;
+
     color:#087bd1;
-    font-size:23px;
-    font-weight:800;
-    margin-top:18px;
-    margin-bottom:30px;
+
+    margin-top:14px;
 }
 
-/* FEATURES */
+/* =========================
+   FEATURE GRID
+========================= */
 
 .features{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:18px 12px;
-    margin-bottom:30px;
+
+    gap:12px;
+
+    margin-top:26px;
 }
 
 .feature{
     display:flex;
     align-items:center;
+
     gap:10px;
-    font-size:16px;
+
+    background:#f5fbf7;
+
+    border:1px solid #dcefe3;
+
+    padding:13px 9px;
+
+    border-radius:16px;
+
+    font-size:14px;
     font-weight:700;
-    color:#444;
+
+    color:#3d4548;
 }
 
-.check{
-    width:42px;
-    height:42px;
-    min-width:42px;
+.feature-icon{
+    width:40px;
+    height:40px;
+    min-width:40px;
+
+    border-radius:12px;
+
     display:flex;
     align-items:center;
     justify-content:center;
-    background:#dff5e4;
-    color:#159447;
-    border-radius:9px;
-    font-size:25px;
-    font-weight:bold;
+
+    background:#dff5e6;
+
+    font-size:21px;
 }
 
-/* INNER CTA */
+/* =========================
+   CTA BOX
+========================= */
 
 .cta-box{
-    border:8px solid #10a38e;
+    margin-top:25px;
+
+    border:7px solid #10a38e;
+
     border-radius:28px;
-    padding:22px 12px 16px;
+
+    padding:18px 12px 15px;
+
+    background:#fff;
 }
 
-.cta-button{
+.join-button{
     display:block;
+
+    width:100%;
+
     text-align:center;
-    text-decoration:none;
-    background:#1488ed;
-    color:white;
-    padding:20px 8px;
+
+    padding:18px 8px;
+
     border-radius:50px;
-    font-size:18px;
+
+    background:linear-gradient(
+        135deg,
+        #1593f6,
+        #0874dc
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
     font-weight:800;
-    box-shadow:0 7px 18px rgba(0,100,200,.25);
+
+    box-shadow:
+        0 8px 20px rgba(0,120,220,.25);
 }
 
 .note{
     text-align:center;
+
     color:#777;
-    font-size:13px;
-    line-height:1.55;
-    margin-top:14px;
+
+    font-size:12px;
+
+    line-height:1.6;
+
+    margin-top:12px;
 }
 
-/* OTHER BUTTONS */
+/* =========================
+   PROMO BAR
+========================= */
+
+.promo{
+    margin-top:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff4d4,
+            #fff
+        );
+
+    border:1px solid #ffe3a1;
+
+    border-radius:20px;
+
+    padding:15px;
+
+    text-align:center;
+}
+
+.promo strong{
+    display:block;
+
+    color:#e78b00;
+
+    font-size:15px;
+
+    margin-bottom:4px;
+}
+
+.promo span{
+    color:#666;
+
+    font-size:12px;
+}
+
+/* =========================
+   SECOND CTA
+========================= */
+
+.second-button{
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    margin-top:18px;
+
+    padding:18px 8px;
+
+    border-radius:50px;
+
+    background:#1188eb;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    box-shadow:
+        0 9px 22px rgba(0,0,0,.18);
+}
 
 .subscribe{
     display:block;
+
     text-align:center;
+
     text-decoration:none;
-    color:white;
-    font-size:19px;
-    font-weight:800;
-    padding:19px 10px;
+
+    margin-top:13px;
+
+    padding:18px 8px;
+
     border-radius:50px;
-    margin-top:18px;
-    background:linear-gradient(135deg,#ffbd18,#ff8615);
-    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffc21c,
+            #ff8513
+        );
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    box-shadow:
+        0 9px 22px rgba(0,0,0,.18);
 }
 
-/* HOW IT WORKS */
+/* =========================
+   SECTION
+========================= */
 
 .section{
     background:white;
-    margin-top:22px;
+
     border-radius:30px;
-    padding:28px 18px;
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    margin-top:20px;
+
+    padding:27px 18px;
+
+    box-shadow:
+        0 14px 35px rgba(0,0,0,.16);
 }
 
-.title{
+.section-title{
     text-align:center;
-    color:#087bd1;
+
     font-size:27px;
-    font-weight:800;
-    margin-bottom:25px;
+
+    color:#087bd1;
+
+    font-weight:900;
+
+    margin-bottom:24px;
 }
+
+/* STEPS */
 
 .step{
     display:flex;
-    gap:14px;
+
+    gap:13px;
+
     margin-bottom:22px;
 }
 
@@ -175,192 +407,335 @@ h1{
     margin-bottom:0;
 }
 
-.number{
-    width:44px;
-    height:44px;
-    min-width:44px;
+.step-number{
+    width:43px;
+    height:43px;
+
+    min-width:43px;
+
     border-radius:50%;
-    background:#1488ed;
-    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1595f7,
+            #0874dc
+        );
+
+    color:#fff;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
-    font-weight:bold;
+
     font-size:17px;
+    font-weight:900;
 }
 
 .step h3{
+    font-size:16px;
+
     color:#333;
-    font-size:17px;
+
     margin-bottom:4px;
 }
 
 .step p{
     color:#777;
-    font-size:13px;
-    line-height:1.5;
+
+    font-size:12px;
+
+    line-height:1.55;
 }
 
-/* INFO */
+/* =========================
+   BENEFITS
+========================= */
 
-.info{
+.benefits{
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:12px;
-    margin-top:22px;
+
+    margin-top:20px;
 }
 
-.info-box{
+.benefit{
     background:white;
+
     border-radius:20px;
+
     padding:20px 8px;
+
     text-align:center;
-    box-shadow:0 8px 22px rgba(0,0,0,.12);
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,.12);
 }
 
-.info-box .icon{
+.benefit-icon{
     font-size:28px;
+
     margin-bottom:8px;
 }
 
-.info-box strong{
+.benefit strong{
     display:block;
+
     font-size:14px;
-}
 
-.info-box small{
-    color:#777;
-    font-size:11px;
-}
-
-/* BOTTOM */
-
-.bottom{
-    background:white;
-    border-radius:28px;
-    padding:25px 16px;
-    margin-top:22px;
-    text-align:center;
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
-}
-
-.bottom h2{
-    font-size:23px;
     color:#333;
+}
+
+.benefit small{
+    display:block;
+
+    color:#777;
+
+    font-size:11px;
+
+    margin-top:3px;
+}
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.final-card{
+    margin-top:20px;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:27px 17px;
+
+    text-align:center;
+
+    box-shadow:
+        0 14px 35px rgba(0,0,0,.16);
+}
+
+.final-card h2{
+    color:#343b4b;
+
+    font-size:23px;
+
     margin-bottom:8px;
 }
 
-.bottom p{
+.final-card p{
     color:#777;
+
     font-size:13px;
-    margin-bottom:17px;
+
+    line-height:1.5;
+
+    margin-bottom:18px;
 }
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-    color:white;
     text-align:center;
+
+    color:rgba(255,255,255,.9);
+
     font-size:11px;
+
     line-height:1.6;
-    margin-top:24px;
+
+    margin-top:22px;
 }
 
-/* STICKY BUTTON */
+/* =========================
+   STICKY BUTTON
+========================= */
 
 .sticky{
     position:fixed;
+
     left:10px;
     right:10px;
+
     bottom:10px;
+
     z-index:9999;
+
+    max-width:660px;
+
+    margin:auto;
 }
 
 .sticky a{
     display:block;
+
     text-align:center;
+
     text-decoration:none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1595f7,
+            #0874dc
+        );
+
     color:white;
-    background:#1488ed;
+
     padding:17px 8px;
+
     border-radius:50px;
+
     font-size:17px;
-    font-weight:800;
-    box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+    font-weight:900;
+
+    box-shadow:
+        0 9px 30px rgba(0,0,0,.35);
+
+    border:2px solid rgba(255,255,255,.4);
 }
 
-/* MOBILE */
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.02);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+.join-button,
+.sticky a{
+    animation:pulse 2.2s infinite;
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:480px){
 
     body{
-        padding:14px 10px 90px;
+        padding:12px 9px 90px;
+    }
+
+    .top-button{
+        font-size:17px;
+        padding:17px 7px;
+    }
+
+    .work-photo{
+        height:220px;
+    }
+
+    .hero-content{
+        padding:25px 15px 22px;
     }
 
     h1{
-        font-size:32px;
+        font-size:31px;
     }
 
     .subtitle{
-        font-size:20px;
-    }
-
-    .features{
-        gap:15px 8px;
+        font-size:19px;
     }
 
     .feature{
-        font-size:14px;
+        font-size:13px;
     }
 
-    .check{
-        width:39px;
-        height:39px;
-        min-width:39px;
-        font-size:22px;
+    .feature-icon{
+        width:37px;
+        height:37px;
+        min-width:37px;
     }
 
-    .telegram-btn{
-        font-size:18px;
-    }
-
-    .cta-button{
-        font-size:16px;
-    }
 }
 
 @media(max-width:360px){
+
+    h1{
+        font-size:28px;
+    }
 
     .features{
         grid-template-columns:1fr;
     }
 
-    h1{
-        font-size:29px;
-    }
 }
+
 </style>
 </head>
+
 
 <body>
 
 <div class="container">
 
-    <!-- TOP TELEGRAM BUTTON -->
 
-    <a
-        href="https://t.me/+UFdMjt0eGrhmM2M1"
-        class="telegram-btn"
-        target="_blank">
-        🚀 JOIN TELEGRAM CHANNEL
-    </a>
+<!-- ==========================================
+     TOP TELEGRAM BUTTON
+=========================================== -->
+
+<a
+    href="https://t.me/+UFdMjt0eGrhmM2M1"
+    target="_blank"
+    class="top-button">
+
+    🚀 JOIN TELEGRAM CHANNEL
+
+</a>
 
 
-    <!-- MAIN CARD -->
+<!-- ==========================================
+     HERO
+=========================================== -->
 
-    <div class="card">
+<div class="hero">
+
+
+    <!-- WORK PHOTO -->
+
+    <div class="work-photo">
+
+        <img
+            src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=85"
+            alt="Writing work from home">
+
+        <div class="photo-overlay"></div>
+
+        <div class="photo-label">
+            📝 Work From Home Opportunity
+        </div>
+
+    </div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-content">
 
         <h1>
-            Handwriting Work From<br>
-            Home
+            Handwriting Work
+            <span class="highlight">From Home</span>
         </h1>
 
         <div class="subtitle">
@@ -372,39 +747,89 @@ footer{
 
         <div class="features">
 
-            <div class="feature">
-                <span class="check">✓</span>
-                <span>Work From Home</span>
-            </div>
 
             <div class="feature">
-                <span class="check">✓</span>
-                <span>No Experience Needed</span>
+
+                <div class="feature-icon">
+                    🏠
+                </div>
+
+                <span>
+                    Work From Home
+                </span>
+
             </div>
 
-            <div class="feature">
-                <span class="check">✓</span>
-                <span>Flexible Timing</span>
-            </div>
 
             <div class="feature">
-                <span class="check">✓</span>
-                <span>Project Based Work</span>
+
+                <div class="feature-icon">
+                    📝
+                </div>
+
+                <span>
+                    Writing Work
+                </span>
+
             </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⏰
+                </div>
+
+                <span>
+                    Flexible Timing
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📱
+                </div>
+
+                <span>
+                    Latest Updates
+                </span>
+
+            </div>
+
 
         </div>
 
 
-        <!-- INNER TELEGRAM -->
+        <!-- CTA -->
 
         <div class="cta-box">
 
             <a
                 href="https://t.me/+UFdMjt0eGrhmM2M1"
-                class="cta-button"
-                target="_blank">
+                target="_blank"
+                class="join-button">
+
                 🚀 JOIN TELEGRAM CHANNEL 🚀
+
             </a>
 
             <p class="note">
-               
+
+                Work availability, eligibility and payment
+                depend on the actual project terms and
+                successful submission.
+
+            </p>
+
+        </div>
+
+
+        <!-- PROMO -->
+
+        <div class="promo">
+
+            <strong>
+                ⭐ Get
